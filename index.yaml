@@ -335,6 +335,39 @@ entries:
         - kind: changed
           description: Moved to to location
     apiVersion: v2
+    appVersion: 4.0.0
+    created: "2023-04-12T19:34:21.387343163Z"
+    dependencies:
+    - condition: minio.enabled
+      name: minio
+      repository: https://helm.min.io/
+      version: 8.x.x
+    - condition: logGenerator.enabled
+      name: log-generator
+      repository: https://kubernetes-charts.banzaicloud.com/
+      version: 0.1.x
+    description: Logging operator demo application
+    digest: f1983728a2c072eaf3c4e4b0504c97b9972501eac8ce406aa86273c73bb0f63e
+    home: https://kube-logging.github.io
+    keywords:
+    - logging
+    - fluentd
+    - fluentbit
+    - syslog-ng
+    kubeVersion: '>=1.16.0-0'
+    name: logging-demo
+    sources:
+    - https://github.com/kube-logging/logging-operator
+    - https://github.com/kube-logging/helm-charts/tree/main/charts/logging-demo
+    type: application
+    urls:
+    - https://github.com/genofire/kube-logging-helm-charts/releases/download/logging-demo-4.0.1-dev.1/logging-demo-4.0.1-dev.1.tgz
+    version: 4.0.1-dev.1
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Moved to to location
+    apiVersion: v2
     appVersion: 4.0.0-rc17
     created: "2023-02-09T10:44:00.072785225Z"
     dependencies:
@@ -969,4 +1002,4 @@ entries:
     urls:
     - https://github.com/kube-logging/helm-charts/releases/download/logging-operator-logging-4.0.0-rc17/logging-operator-logging-4.0.0-rc17.tgz
     version: 4.0.0-rc17
-generated: "2023-04-12T19:29:48.38219391Z"
+generated: "2023-04-12T19:34:21.711579328Z"
